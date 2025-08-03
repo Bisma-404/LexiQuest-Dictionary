@@ -508,6 +508,19 @@ main {
     margin-top: 1.5rem;
 }
 
+.developer-credit {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    color: var(--light-text);
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+[data-theme="dark"] .developer-credit {
+    color: var(--light-text);
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
 @media (max-width: 768px) {
     .search-box {
         flex-direction: column;
