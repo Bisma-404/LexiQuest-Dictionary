@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Smart Dictionary - Look up definitions, pronunciations, and synonyms">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LexiQuest-Dictionary</title>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="header-content">
+                    <h1 class="logo-title">
+  <img src="dictionary_logo.png" alt="LexiQuest Icon" class="header-icon">
+  <span>LexiQuest</span>
+</h1>
+                <p class="tagline">Discover words, enrich your vocabulary</p>
+                <div class="header-buttons">
+                    <button class="icon-btn" id="theme-toggle" title="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="icon-btn" id="info-btn" title="About">
+                        <i class="fas fa-info-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="search-container">
+                <div class="search-box">
+                    <div class="search-input-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" 
+                               placeholder="Search for a word..." 
+                               id="inp-word" 
+                               autocomplete="off"
+                               aria-label="Search for a word" />
+                        <button class="clear-btn" id="clear-btn">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <button id="search-btn" class="primary-btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                <div id="suggestions" class="suggestions"></div>
+            </div>
+
+            <div class="result-container">
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                    <p>Finding definitions...</p>
+                </div>
+                
+                <div id="result" class="result">
+                    <div class="welcome-message">
+                        <h2>Welcome to LexiQuest</h2>
+                        <p>Type any word to discover its meaning, pronunciation, and usage examples.</p>
+                        <div class="quick-tips">
+                            <h3>Quick Tips:</h3>
+                            <ul>
+                             <li><i class="fas fa-volume-up"></i> Listen to accurate pronunciations</li>
+                                <li><i class="fas fa-layer-group"></i> Explore multiple meanings</li>
+                                <li><i class="fas fa-check-circle"></i> Get automatic spelling help</li>
+                                <li><i class="fas fa-exchange-alt"></i> Switch between light/dark mode</li>
+                                <li><i class="fas fa-clock"></i> View your recent searches</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <audio id="sound"></audio>
+        
+        <div class="modal" id="info-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>About LexiQuest</h2>
+                <p>LexiQuest is a modern dictionary application that helps you discover word meanings, pronunciations, synonyms, and usage examples.</p>
+                <div class="features">
+                    <h3><i class="fas fa-star"></i> Features:</h3>
+                    <ul>
+                        <li>Instant word definitions</li>
+                        <li>Audio pronunciations</li>
+                        <li>Spelling suggestions</li>
+                        <li>Usage examples</li>
+                        <li>Synonyms and antonyms</li>
+                        <li>Dark/light mode</li>
+                    </ul>
+                </div>
+                <div class="attribution">
+                    <p>Powered by DictionaryAPI and Datamuse</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
