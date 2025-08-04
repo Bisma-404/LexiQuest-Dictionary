@@ -3,6 +3,13 @@
 A **web-based vocabulary tool** built with **HTML, CSS, and JavaScript**, powered by **DictionaryAPI** and **Datamuse API**. It allows users to **look up word definitions**, hear **audio pronunciations**, discover **synonyms**, and receive **intelligent word suggestions** – all in a modern, responsive interface.  
 
 ---
+## Preview  
+![LexiQuest Preview](image/LexiQuest-Front.png)  
+
+---
+![search Preview](image/demo-word.png)  
+
+---
 
 ## Overview  
 
