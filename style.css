@@ -126,6 +126,7 @@ main {
     position: relative;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .search-icon {
@@ -133,11 +134,12 @@ main {
     left: 1rem;
     color: var(--light-text);
     font-size: 1rem;
+    z-index: 1;
 }
 
-.search-box input {
+.search-input-wrapper input {
     width: 100%;
-    padding: 1rem 1rem 1rem 2.5rem;
+    padding: 1rem 3rem 1rem 2.5rem; 
     border: 2px solid #e9ecef;
     border-radius: var(--border-radius);
     font-size: 1rem;
@@ -145,6 +147,7 @@ main {
     background-color: var(--card-bg);
     color: var(--text-color);
 }
+
 
 .search-box input:focus {
     border-color: var(--primary-color);
@@ -154,12 +157,14 @@ main {
 
 .clear-btn {
     position: absolute;
-    right: 1rem;
+    right: 0.5rem; 
     background: none;
     border: none;
     color: var(--light-text);
     cursor: pointer;
     font-size: 1rem;
+    padding: 0.5rem; 
+    z-index: 2; 
     transition: var(--transition);
 }
 
@@ -525,11 +530,19 @@ main {
     .search-box {
         flex-direction: column;
     }
-    
+
     .search-box button {
         width: 100%;
         padding: 1rem;
         justify-content: center;
+    }
+
+    .search-input-wrapper input {
+        padding-right: 3rem; 
+    }
+    
+    .clear-btn {
+        right: 0.75rem; 
     }
     
     header h1 {
