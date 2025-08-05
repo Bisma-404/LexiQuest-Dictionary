@@ -537,12 +537,13 @@ main {
         justify-content: center;
     }
 
-    .search-input-wrapper input {
-        padding-right: 3rem; 
-    }
-    
-    .clear-btn {
-        right: 0.75rem; 
+    search-input-wrapper input {
+    padding-right: 2.5rem; 
+  }
+
+  .clear-btn {
+    right: 0.25rem !important; 
+    transform: none !important;
     }
     
     header h1 {
@@ -577,3 +578,4 @@ main {
         font-size: 1.8rem;
     }
 }
+
