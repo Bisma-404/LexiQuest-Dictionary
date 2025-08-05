@@ -31,24 +31,26 @@
         
         <main>
             <div class="search-container">
-                <div class="search-box">
-                    <div class="search-input-wrapper">
-                        <i class="fas fa-search search-icon"></i>
-                        <input type="text" 
-                               placeholder="Search for a word..." 
-                               id="inp-word" 
-                               autocomplete="off"
-                               aria-label="Search for a word" />
-                        <button class="clear-btn" id="clear-btn">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <button id="search-btn" class="primary-btn">
-                        <i class="fas fa-search"></i> Search
-                    </button>
-                </div>
-                <div id="suggestions" class="suggestions"></div>
-            </div>
+    <div class="search-box">
+        <div class="search-input-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input 
+                type="text" 
+                placeholder="Search for a word..." 
+                id="inp-word" 
+                autocomplete="off"
+                aria-label="Search for a word"
+            />
+            <button class="clear-btn" id="clear-btn" aria-label="Clear search">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <button id="search-btn" class="primary-btn">
+            <i class="fas fa-search"></i> Search
+        </button>
+    </div>
+    <div id="suggestions" class="suggestions"></div>
+</div>
 
             <div class="result-container">
                 <div id="loading" class="loading">
