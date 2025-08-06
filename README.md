@@ -35,7 +35,11 @@ LexiQuest is designed to make language learning and writing **faster and smarter
 ✅ **Clean Codebase** – Easy to understand and customize  
 
 ---
+##  Try it out now
 
+https://bisma-404.github.io/LexiQuest-Dictionary/
+
+---
 ## How to Run  
 
 1. **Clone or Download** this repository  
